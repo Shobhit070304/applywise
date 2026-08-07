@@ -14,6 +14,10 @@
   "type": "commonjs",
   "dependencies": {
     "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^26.1.2",
     "bcryptjs": "^3.0.3",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
@@ -24,16 +28,10 @@
     "helmet": "^8.3.0",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.9.1",
-    "resend": "^6.18.1"
+    "resend": "^6.18.1",
+    "typescript": "^5.9.2"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.6",
-    "@types/jsonwebtoken": "^9.0.10",
-    "@types/node": "^26.1.2",
-    "i": "^0.3.7",
-    "npm": "^11.19.0",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.9.2"
+    "ts-node-dev": "^2.0.0"
   }
 }
