@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev src/index.ts",
+    "seed:jobs": "npx ts-node src/scripts/seedJobs.ts",
     "build": "tsc",
     "start": "node dist/index.js"
   },

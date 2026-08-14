@@ -18,6 +18,9 @@ export default function Navbar() {
 
         {/* Navigation Links */}
         <nav className="hidden md:flex items-center gap-6 text-xs text-zinc-400 font-medium tracking-wide">
+          <Link href="/jobs" className="hover:text-zinc-100 transition-colors">
+            Find Jobs
+          </Link>
           {user ? (
             <>
               <Link href="/dashboard" className="hover:text-zinc-100 transition-colors">
