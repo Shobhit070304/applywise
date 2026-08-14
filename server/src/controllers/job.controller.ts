@@ -34,8 +34,12 @@ export const getJobs = async (
     const queryObj: any = { status: status || 'active' };
 
     if (search) {
-      const escapedSearch = (search as string).trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      queryObj.title = { $regex: new RegExp(escapedSearch, 'i') };
+      queryObj.$or = [
+        { title: { $regex: search as string, $options: 'i' } },
+        { company: { $regex: search as string, $options: 'i' } },
+        { description: { $regex: search as string, $options: 'i' } },
+        { skills: { $regex: search as string, $options: 'i' } },
+      ];
     }
 
     if (location) {
